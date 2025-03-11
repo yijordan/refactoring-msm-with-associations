@@ -126,27 +126,27 @@
     </th>
   </tr>
 
-  <% @the_actor.roles.each do |a_role| %>
+  <% @the_actor.characters.each do |a_character| %>
 
     <tr>
       <td>
-        <%= a_role.movie.title %>
+        <%= a_character.movie.title %>
       </td>
 
       <td>
-        <%= a_role.movie.year %>
+        <%=  a_character.movie.year %>
       </td>
 
       <td>
-        <%= a_role.movie.director.name %>
+        <%= a_character.movie.director.name %>
       </td>
 
       <td>
-        <%= a_role.name %>
+        <%= a_character.name %>
       </td>
 
       <td>
-        <a href="/movies/<%= a_role.movie.id %>">
+        <a href="/movies/<%= a_character.movie.id %>">
           Show details
         </a>
       </td>
